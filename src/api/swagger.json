@@ -1,0 +1,89 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a simply crawler server. For crawling a website request the operation defined",
+    "version": "1.0.0",
+    "title": "Crawler API",
+    "contact": {
+      "email": "pablopenagomez@gmail.com"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/v2",
+  "tags": [
+    {
+      "name": "crawler",
+      "description": "Crawling operations"
+    }
+  ],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/crawlWebsite": {
+      "get": {
+        "tags": [
+          "crawler"
+        ],
+        "summary": "Crawl a website URL",
+        "description": "Get a list of URLs from a site",
+        "operationId": "crawlWebsite",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "url",
+            "description": "Website URL to explore",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The list of URLs obtained",
+            "schema": {
+              "$ref": "#/definitions/CrawlerResponse"
+            }
+          },
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CrawlerResponse": {
+      "type": "object",
+      "properties": {
+        "requestedUrl": {
+          "type": "string",
+          "description": "Requested url for crawling"
+        },
+        "requestID": {
+          "type": "string",
+          "description": "Request ID assignated to request"
+        },
+        "processed": {
+          "type": "number",
+          "description": "Processing time in miliseconds"
+        },
+        "results": {
+          "description": "List of URLs retrieved by crawler",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
