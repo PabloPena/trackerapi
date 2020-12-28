@@ -38,6 +38,15 @@
         "parameters": [
           {
             "in": "body",
+            "name": "broadcastId",
+            "description": "Broadcast identifier for notifications",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "body",
             "name": "url",
             "description": "Website URL to explore",
             "required": true,
@@ -72,7 +81,11 @@
           "type": "string",
           "description": "Request ID assignated to request"
         },
-        "processed": {
+        "status": {
+          "type": "number",
+          "description": "Status of request"
+        },
+        "processingTime": {
           "type": "number",
           "description": "Processing time in miliseconds"
         },

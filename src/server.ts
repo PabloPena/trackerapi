@@ -1,4 +1,6 @@
-#!/usr/bin/env node
+/**
+ * Define HTTP server
+ */
 
 /**
  * Module dependencies.
@@ -6,7 +8,6 @@
 import app from './app';
 import debug from 'debug';
 import http from 'http';
-import bodyParser from 'body-parser';
 
 /**
  * Get port from environment and store in Express.
@@ -80,3 +81,18 @@ function onListening() {
     : 'port ' + addr?.port;
   debug.log('Listening on ' + bind);
 }
+
+/**
+ * Socket.io Setup 
+ */
+export const socket = require('socket.io')(server, {
+  cors: {
+    origin: '*',
+  }
+});
+socket.on('connection', (socket: any) => {
+  console.log('Socket: client connected');
+  socket.on('disconnect', () => {
+    console.log('client disconnected');
+  });
+});

@@ -1,7 +1,9 @@
 import { CrawlerRequestStatus } from "../../api/model/crawlerRequestStatus.enum";
 
+// Crawler Request Model Class Definition
 export class CrawlerRequest {
   
+  // The state by default
   public status: CrawlerRequestStatus = CrawlerRequestStatus.STARTED;
   public requested: Date;
   public updated: any = null;
@@ -9,6 +11,7 @@ export class CrawlerRequest {
       public requestID: string,
       public url: string
     ) {
+    // Set requested to now on constructor
     this.requested = new Date();
   }
 

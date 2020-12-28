@@ -7,10 +7,16 @@ import { CrawlerRequestStatus } from "../api/model/crawlerRequestStatus.enum";
 export class CrawlerProcess {
     
     request: CrawlerRequest;
-    constructor(url: string){
+    broadcastId: string
+    constructor(broadcastId: string, url: string){
+        this.broadcastId = broadcastId;
         this.request = new CrawlerRequest(uuidv4(), url);
     }
 
+    /**
+     * Do process business neccessary to retrieve all links above the url
+     * @returns a promise of results
+     */
     doWork(){
         return new Promise<string[]>((resolve, reject) => {
             UrlExtractorUtil.extractHTML(this.request.url)

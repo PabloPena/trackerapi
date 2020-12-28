@@ -6,24 +6,18 @@ import { CrawlerManager } from "../crawler/crawlerManager";
 class CrawlerController {
 
     /**
-     * Render the API index page
-     * @param req
-     * @param res
+     * Crawl a website url
+     * @param req includes the url y req.body.url
+     * @param res returns the process created 
      */
     public static crawl = function(req: any, res: any) {
-        if (CrawlerValidator.validateURL(req.body?.url)){
-            const newProcess: CrawlerProcess = CrawlerManager.new(req.body.url);
-            // Before doing business, notify the requester 
-            res.status(200).json(new CrawlerResponse(req.body.url, newProcess.request.requestID, newProcess.request.status));
-            CrawlerManager.startProcess(newProcess).then((result: CrawlerResponse) =>{
-                // Update success thought web sockets with results
-                console.log(result);
-            }).catch((err: any) => {
-                // Update error thought web sockets
-                console.log(err);
-            });
+        if (req.body?.broadcastId && CrawlerValidator.validateURL(req.body?.url)){
+            const newProcess: CrawlerProcess = CrawlerManager.manage(req.body.broadcastId, req.body.url);
+            // Before doing business, notify the requester. The crawling proccess will continue asyncronously 
+            // The notification of completion will be throw with sockets inside the manager
+            res.status(200).json(new CrawlerResponse(newProcess.request.requestID, req.body.url, newProcess.request.status, null, []));
         } else {
-            res.status(405).send('Invalid Argument');
+            !req.body.broadcastId ? res.status(405).send('Argument is Mandatory') : res.status(405).send('Invalid Argument');
         }
     };
 
