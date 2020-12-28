@@ -1,5 +1,9 @@
-Crawlet API
+Crawler API
 ====================
+
+This backend-oriented applications responds to the requeriments of crawling websites URLs and listing the links retrieved.
+
+The app is developed in NodeJS using socket.io for living communication with clients in order to notify crawling process errors or completions.
 
 ### Install packages and globals
 
