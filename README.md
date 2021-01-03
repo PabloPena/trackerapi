@@ -5,7 +5,7 @@ This backend application responds to the requeriments of crawling websites URLs 
 
 The app is developed in NodeJS using socket.io for living communication with web clients in order to notify crawling process errors or completions. Also use express as http manager and middleware.
 
-The project contains several checks building with mocca.
+The project contains several test cases building in mocha.
 
 It already set for deployment as docker image. Check intructions above.
 
