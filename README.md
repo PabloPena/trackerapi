@@ -1,9 +1,13 @@
 Crawler API
 ====================
 
-This backend-oriented applications responds to the requeriments of crawling websites URLs and listing the links retrieved.
+This backend application responds to the requeriments of crawling websites URLs and listing the links retrieved.
 
-The app is developed in NodeJS using socket.io for living communication with clients in order to notify crawling process errors or completions.
+The app is developed in NodeJS using socket.io for living communication with web clients in order to notify crawling process errors or completions. Also use express as http manager and middleware.
+
+The project contains several checks building with mocca.
+
+It already set for deployment as docker image. Check intructions above.
 
 ### Swagger
 
