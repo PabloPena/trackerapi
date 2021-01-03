@@ -52,16 +52,18 @@ For the previous example, the final command would be:
 
 `$ docker run -d --name  -p 3000:3000 [user]/trackerappapi:0.0.1`
 
+  
+  
 ## TO DO TASKS
 
-## Add lint build
+**Add lint build**
 
 Pending
 
-## Versioning Build
+**Add versioning build**
 
 Pending
 
-## Review xmldom error returned after each test build. 
+**Review xmldom error returned after each test build** 
 
 Pending
