@@ -5,8 +5,9 @@ This backend-oriented applications responds to the requeriments of crawling webs
 
 The app is developed in NodeJS using socket.io for living communication with clients in order to notify crawling process errors or completions.
 
-### Check Api Contract And Test It
+### Swagger
 
+Check Api Contract And Test It:  
 http://localhost:3000/api-docs/
 
 ### Install packages and globals
@@ -25,7 +26,7 @@ Build the application
 Run a local dev server
 `$ npm start`
 
-## Test 
+### Test 
 
 Run `npm test` for testing api with mocha.
 
@@ -52,9 +53,9 @@ For the previous example, the final command would be:
 
 `$ docker run -d --name  -p 3000:3000 [user]/trackerappapi:0.0.1`
 
+__ 
   
-  
-## TO DO TASKS
+##### TO DO TASKS
 
 **Add lint build**
 
