@@ -1,7 +1,7 @@
-import { CrawlerProcess } from "../crawler/crawlerProcess";
-import { CrawlerResponse } from "../api/model/crawlerResponse.model";
+import { CrawlerProcess } from "../crawler/crawler-process";
+import { CrawlerResponse } from "../api/model/crawler-response.model";
 import { CrawlerValidator } from "../api/validator/crawler.validator";
-import { CrawlerManager } from "../crawler/crawlerManager";
+import { CrawlerManager } from "../crawler/crawler-manager";
 
 class CrawlerController {
 

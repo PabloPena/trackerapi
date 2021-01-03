@@ -1,7 +1,7 @@
-import { NotificationAction } from "../api/notification/notificationAction.enum";
-import NotificationData from "../api/notification/notificationData.interface";
-import { CrawlerResponse } from "../api/model/crawlerResponse.model";
-import { CrawlerProcess } from "./crawlerProcess";
+import { NotificationAction } from "../api/notification/notification-action.enum";
+import NotificationData from "../api/notification/notifiaction-data.interface";
+import { CrawlerResponse } from "../api/model/crawler-response.model";
+import { CrawlerProcess } from "./crawler-process";
 import { SockerUtil } from "../util/socker.util";
 
 export class CrawlerManager {

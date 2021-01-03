@@ -1,4 +1,4 @@
-import { CrawlerRequestStatus } from "./crawlerRequestStatus.enum";
+import { CrawlerRequestStatus } from "./crawler-request-status.enum";
 
 // Crawler Response Model Class Definition
 export class CrawlerResponse {

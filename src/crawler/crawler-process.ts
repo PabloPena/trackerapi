@@ -1,8 +1,8 @@
-import { CrawlerRequest } from "./model/crawlerRequest.model";
+import { CrawlerRequest } from "./model/crawler-request.model";
 import { v4 as uuidv4 } from 'uuid';
 import { HtmlUtil } from "../util/html.util";
-import { UrlExtractorUtil } from "../util/urlExtractor.util";
-import { CrawlerRequestStatus } from "../api/model/crawlerRequestStatus.enum";
+import { UrlExtractorUtil } from "../util/url-extractor.util";
+import { CrawlerRequestStatus } from "../api/model/crawler-request-status.enum";
 
 export class CrawlerProcess {
     

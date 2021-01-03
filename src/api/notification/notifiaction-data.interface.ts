@@ -1,4 +1,4 @@
-import { NotificationAction } from './notificationAction.enum';
+import { NotificationAction } from './notification-action.enum';
 
 // Notification Data Model Interface Definition
 export default interface NotificationData {

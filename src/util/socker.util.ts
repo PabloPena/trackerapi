@@ -1,5 +1,5 @@
 import { socket } from '../server';;
-import NotificationData from '../api/notification/notificationData.interface';
+import NotificationData from '../api/notification/notifiaction-data.interface';
 
 export class SockerUtil {
 
