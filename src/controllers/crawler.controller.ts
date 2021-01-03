@@ -10,8 +10,8 @@ class CrawlerController {
      * @param req includes the url y req.body.url
      * @param res returns the process created 
      */
-    public static crawl = function(req: any, res: any) {
-        if (req.body?.broadcastId && CrawlerValidator.validateURL(req.body?.url)){
+    public static crawl = function (req: any, res: any) {
+        if (req.body?.broadcastId && CrawlerValidator.validateURL(req.body?.url)) {
             const newProcess: CrawlerProcess = CrawlerManager.manage(req.body.broadcastId, req.body.url);
             // Before doing business, notify the requester. The crawling proccess will continue asyncronously 
             // The notification of completion will be throw with sockets inside the manager
@@ -24,4 +24,3 @@ class CrawlerController {
 }
 
 export default CrawlerController;
-  

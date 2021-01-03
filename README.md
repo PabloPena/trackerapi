@@ -5,6 +5,10 @@ This backend-oriented applications responds to the requeriments of crawling webs
 
 The app is developed in NodeJS using socket.io for living communication with clients in order to notify crawling process errors or completions.
 
+### Check Api Contract And Test It
+
+http://localhost:3000/api-docs/
+
 ### Install packages and globals
 
 `$ npm install`
@@ -15,9 +19,15 @@ Utility for server reloading when detecting file changes
 
 ##### Commands
 
-Run a local dev server
+Build the application
+`$ npm run build`
 
+Run a local dev server
 `$ npm start`
+
+## Test 
+
+Run `npm test` for testing api with mocha.
 
 ### Docker
 
@@ -30,7 +40,7 @@ this application mantains two enviroments: *dev* and *prod*.
 
 For this project, a sample build would be:
 
-`$ docker build -t tracker/api:0.0.1 -f docker/dockerfile .`
+`$ docker build -t [user]/trackerappapi:0.0.1 -f docker/dockerfile .`
 
 **Creating and running the container:**
 
@@ -40,22 +50,18 @@ To run this image, a container must be created.
 
 For the previous example, the final command would be:
 
-`$ docker run -d --name trackerapi -p 3000:3000 tracker/api:0.0.1`
+`$ docker run -d --name  -p 3000:3000 [user]/trackerappapi:0.0.1`
 
 ## TO DO TASKS
 
-## Environment support
+## Add lint build
 
 Pending
 
-## Docker
+## Versioning Build
 
 Pending
 
-**Build Image Instructions:**
-
-Pending
-
-**Creating and running the container instructions:**
+## Review xmldom error returned after each test build. 
 
 Pending

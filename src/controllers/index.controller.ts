@@ -6,7 +6,7 @@ class IndexController {
    * @param req
    * @param res
    */
-  public static index = function(req: any, res: any) {
+  public static index = function (req: any, res: any) {
     res.render("../views/index");
   };
 

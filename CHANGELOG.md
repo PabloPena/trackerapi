@@ -7,13 +7,15 @@ All notable changes in the application will be documented in this file version b
 In this new version of the application some features have been polished / completed. Outlined below.
  
 ### Added
-- None
+- Add tests with mocha.
+- Dockerized App
  
 ### Changed
-- None
+- Swagger API Contract Updated
  
 ### Fixed
-- None
+- Remove unused libs
+- Standarize file formats and names
  
 ## [0.0.1] - 2020-12-28
   

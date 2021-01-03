@@ -5,11 +5,11 @@ export class CrawlerValidator {
      * @param urlCandidate includes the url to validate
      * @returns if URL is valid
      */
-    public static validateURL(urlCandidate: string): boolean{
+    public static validateURL(urlCandidate: string): boolean {
         let url;
         try {
             url = new URL(urlCandidate)
-        } catch (_){
+        } catch (_) {
             return false;
         }
 

@@ -17,7 +17,7 @@ export class HtmlUtil {
         // 2. We shoud not include duplicates
         // 3. Also solution will be aware of non href links
         const setOfLinks: Set<string> = links.reduce((acc, link) => {
-            if (link.getAttribute('href') && CrawlerValidator.validateURL(link.getAttribute('href'))){
+            if (link.getAttribute('href') && CrawlerValidator.validateURL(link.getAttribute('href'))) {
                 acc.add(link.getAttribute('href'))
             }
             return acc

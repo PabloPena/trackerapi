@@ -2,9 +2,9 @@
  * App Definition
  */
 
- /**
- * Module dependencies.
- */
+/**
+* Module dependencies.
+*/
 import express from 'express';
 import morgan from 'morgan';
 import router from './router';
@@ -24,7 +24,7 @@ app.set('view engine', 'html');
 /* Middleware setups */
 app.use(morgan('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(process.cwd(), 'src/views')));
 app.use(cors());
 

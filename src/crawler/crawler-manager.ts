@@ -17,8 +17,8 @@ export class CrawlerManager {
         newProcess.doWork()
             .then(results => {
                 const responseData = new CrawlerResponse(
-                    newProcess.request.requestID, 
-                    newProcess.request.url, 
+                    newProcess.request.requestID,
+                    newProcess.request.url,
                     newProcess.request.status,
                     newProcess.request.updated.getTime() - newProcess.request.requested.getTime(),
                     results);
@@ -30,8 +30,8 @@ export class CrawlerManager {
             })
             .catch(err => {
                 const responseData = new CrawlerResponse(
-                    newProcess.request.requestID, 
-                    newProcess.request.url, 
+                    newProcess.request.requestID,
+                    newProcess.request.url,
                     newProcess.request.status,
                     null,
                     [],

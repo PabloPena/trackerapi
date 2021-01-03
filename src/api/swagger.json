@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "This is a simply crawler server. For crawling a website request the operation defined",
-    "version": "1.0.0",
+    "version": "0.0.2",
     "title": "Crawler API",
     "contact": {
       "email": "pablopenagomez@gmail.com"
@@ -21,8 +21,8 @@
     "http"
   ],
   "paths": {
-    "/crawlWebsite": {
-      "get": {
+    "/crawl": {
+      "post": {
         "tags": [
           "crawler"
         ],
@@ -73,13 +73,13 @@
     "CrawlerResponse": {
       "type": "object",
       "properties": {
-        "requestedUrl": {
-          "type": "string",
-          "description": "Requested url for crawling"
-        },
         "requestID": {
           "type": "string",
           "description": "Request ID assignated to request"
+        },
+        "requestedUrl": {
+          "type": "string",
+          "description": "Requested url for crawling"
         },
         "status": {
           "type": "number",
@@ -95,6 +95,10 @@
           "items": {
             "type": "string"
           }
+        },
+        "error": {
+          "description": "If ocurrs, show error message",
+          "type": "string"
         }
       }
     }
