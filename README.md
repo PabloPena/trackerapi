@@ -14,20 +14,22 @@ It already set for deployment as docker image. Check intructions above.
 Check Api Contract And Test It:  
 http://localhost:3000/api-docs/
 
-### Install packages and globals
+### Build&Run Commands
+
+**Install packages and globals**
 
 `$ npm install`
 
-Utility for server reloading when detecting file changes
+**Utility for server reloading when detecting file changes**
 
 `$ npm install -g nodemon`
 
-##### Commands
+**Build the application**
 
-Build the application
 `$ npm run build`
 
-Run a local dev server
+**Run a local dev server**
+
 `$ npm start`
 
 ### Test 
