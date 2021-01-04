@@ -2,13 +2,12 @@
 # Change Log
 All notable changes in the application will be documented in this file version by version.
  
-## [0.0.3] - 2021-01-03
- 
+## [0.0.3] - 2021-01-04
+
+### Added
 Application has been deployed on Heroku.
 
 ## [0.0.2] - 2021-01-03
- 
-In this new version of the application some features have been polished / completed. Outlined below.
  
 ### Added
 - Add tests with mocha.
