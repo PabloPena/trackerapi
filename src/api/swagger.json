@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "description": "This is a simply crawler server. For crawling a website request the operation defined",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "title": "Crawler API",
     "contact": {
       "email": "pablopenagomez@gmail.com"

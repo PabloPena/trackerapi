@@ -25,7 +25,11 @@
     "type": "git",
     "url": "git+https://github.com/PabloPena/trackerapi.git"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "socketio",
+    "crawler"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -61,5 +65,8 @@
     "nodemon": "^2.0.6",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
+  },
+  "engines": {
+    "node": "12.18.2"
   }
 }
