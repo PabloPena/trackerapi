@@ -8,7 +8,7 @@ In this new version of the application some features have been polished / comple
  
 ### Added
 - Add tests with mocha.
-- Dockerized App
+- App has been dockerized 
  
 ### Changed
 - Swagger API Contract Updated
