@@ -11,7 +11,7 @@ In this new version of the application some features have been polished / comple
 - App has been dockerized 
  
 ### Changed
-- Swagger API Contract Updated
+- Swagger API contract updated
  
 ### Fixed
 - Remove unused libs

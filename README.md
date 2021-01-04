@@ -34,12 +34,11 @@ http://localhost:3000/api-docs/
 
 ### Test 
 
-Run `npm test` for testing api with mocha.
+Run `npm test` for testing api with mocha. The tests are located in `tests/` folder.
 
 ### Docker
 
-Docker container files should be created in `docker/`. A new file should be created for each environment. At this moment
-this application mantains two enviroments: *dev* and *prod*.
+Docker container files should be created in `docker/`. Docker commands below:
 
 **Build Image:**
 
