@@ -9,6 +9,10 @@ The project contains several test cases building in mocha.
 
 Its already set for deployment as docker image. Check intructions above.
 
+### Demo
+
+Demo application deployed on heroku. (https://calm-wildwood-04416.herokuapp.com/)
+
 ### Swagger
 
 Check Api constract and test it from web interface:  
