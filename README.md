@@ -7,12 +7,12 @@ The app is developed in NodeJS using socket.io for living communication with web
 
 The project contains several test cases building in mocha.
 
-It already set for deployment as docker image. Check intructions above.
+Its already set for deployment as docker image. Check intructions above.
 
 ### Swagger
 
-Check Api Contract And Test It:  
-http://localhost:3000/api-docs/
+Check Api constract and test it from web interface:  
+http://[host]:[port]/api-docs/
 
 ### Build&Run Commands
 
@@ -66,10 +66,10 @@ __
 
 Pending
 
-**Add versioning build**
+**Add versioning build to streamline the process**
 
 Pending
 
-**Review xmldom error returned after each test build** 
+**Review xmldom error returned after each mocha test build** 
 
 Pending
