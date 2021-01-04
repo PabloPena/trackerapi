@@ -30,7 +30,7 @@ http://[host]:[port]/api-docs/
 
 **Run a local dev server**
 
-`$ npm start`
+`$ npm run start:dev`
 
 ### Test 
 
@@ -68,7 +68,7 @@ Pending
 
 **Add versioning build to streamline the process**
 
-Pending
+Pen
 
 **Review xmldom error returned after each mocha test build** 
 
